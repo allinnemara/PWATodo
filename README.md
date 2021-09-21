@@ -9,7 +9,6 @@
 
 <!-- PROJECT SHIELDS -->
 <p>
-  <img src="https://img.shields.io/badge/windelw4-a0.1.0-fddd5c" alt="yarn package" />
   <img src="https://img.shields.io/badge/yarn%20package-v1.22.10-0e7fbf" alt="yarn package" />
   <img src="https://img.shields.io/badge/nodejs-v14.15.5-026e00" alt="nodejs version" />
   <img src="https://img.shields.io/badge/react%20js-v17.0.1-61dafb" alt="react js version" />
