@@ -147,6 +147,8 @@ Nesta seção haverão instruções para editar o template e manter a estrutura 
 > >- **components/**  - Cada componente é tratado como um mini aplicativo Angular;
 > >- **controllers/** - Controllers da aplicação;
 > >- **directives/**  - Diretivas da aplicação;
+> >- *app.module.js* -
+> >- *app.routes.js* -
 >- **assets/** - Arquivos da aplicação
 > >- **img/** - Imagens e ícones;
 > >- **libs/** - Bibliotecas de terceiros, como jQuery, Moment, Underscore, etc;
@@ -166,8 +168,6 @@ Nesta seção haverão instruções para editar o template e manter a estrutura 
 > > >- **main.scss** - Arquivo main CSS;
 > >- **js/** - Arquivos Javascript que não são para o Angular;
 > > >- *utils.js* - Funções e scripts que podem ser reutilizados na aplicação;
->- *app.module.js* -
->- *app.routes.js* -
 - *index.html* - Arquivo padrão de start da aplicação;
 
 <!-- REPOSITORY -->
