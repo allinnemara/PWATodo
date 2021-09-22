@@ -33,8 +33,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Abaixo segue o que foi utilizado na criação do projeto:
 
-- [Angular CLI](https://www.npmjs.com/package/@angular/cli)- O Angular CLI é uma ferramenta de interface de linha de comando que você usa para inicializar, desenvolver, criar scaffold e manter aplicativos Angular diretamente de um shell de comando.
-
+- [Angular CLI](https://www.npmjs.com/package/@angular/cli) - O Angular CLI é uma ferramenta de interface de linha de comando que você usa para inicializar, desenvolver, criar scaffold e manter aplicativos Angular diretamente de um shell de comando.
+- [Angular Material](https://material.angular.io/) - Componentes do Material Design para Angular.
 
 <!-- GETTING STARTED -->
 ## Começando
