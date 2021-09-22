@@ -71,29 +71,29 @@ portalFarani
 │   │   ├── components/
 │   │   ├── controllers/
 │   │   └── directives/
-├── assets/
-│   ├── img/
-│   ├── js/
-│   │   └── utils.js
-│   ├── libs/
-│   ├── styles/
-│   │   ├── base/
-│   │   │   ├── base.scss
-│   │   │   └── reset.scss
-│   │   ├── layout/
-│   │   │   ├── form.scss
-│   │   │   ├── header.scss
-│   │   │   ├── buttons.scss
-│   │   │   └── sidebar.scss
-│   │   ├── components/
-│   │   │   ├── cardConteudo.scss
-│   │   │   └── cardCertificados.scss
-│   │   └── abstracts/
-│   │       ├── variables.scss
-│   │       └── mixins.scss
-│   └── main.scss
-├── app.module.js
-├── app.routes.js
+│   ├── assets/
+│   │   ├── img/
+│   │   ├── libs/
+│   │   ├── js/
+│   │   │   └── utils.js
+│   │   ├── styles/
+│   │   │   ├── base/
+│   │   │   │   ├── base.scss
+│   │   │   │   └── reset.scss
+│   │   │   ├── layout/
+│   │   │   │   ├── form.scss
+│   │   │   │   └── buttons.scss
+│   │   │   ├── components/
+│   │   │   │   ├── cardConteudo.scss
+│   │   │   │   └── cardCertificados.scss
+│   │   │   └── abstracts/
+│   │   │       ├── variables.scss
+│   │   │       └── mixins.scss
+│   │   └── main.scss
+│   ├── app.module.js
+│   └── app.routes.js
+└── index.html
+
 ```
 
 Serão explicados os arquivos e diretórios na seção de [Workflow](#workflow).
@@ -128,18 +128,8 @@ ng serve
 Nesta seção haverão instruções para editar o template e manter a estrutura principal de módulos explicando para que os diretórios são utilizados e também os arquivos de configuração.
 
 - **dist/** - Diretório publico de arquivos estáticos da aplicação;
+- **src/** - 
 >- **app/** - Diretório principal de configuração e organização da aplicação;
-> >- **shared/** - Componentes reutilizáveis ou particionados;
-> > >- **header/**
-> > > >- *header.js* -
-> > > >- *header.html* -
-> >- **services/** - Serviços da aplicação;
-> > >- **authService.js**   - Serviços relacionados a autenticação do usuário;
-> > >- **userService.js**   - Serviços relacionados ao usuário. ex.: get e update de dados cadastrais;
-> >- **components/** - Componentes da aplicação;
-> > >- **home/** -
-> > > >- *home.js* -
-> > > >- *home.html* -
 > >- **auth/** - Autenticação da aplicação;
 > > >- **login/** -
 > > > >- *login.js* -
@@ -147,25 +137,38 @@ Nesta seção haverão instruções para editar o template e manter a estrutura 
 > > >- **esqueceu-senha/** -
 > > > >- *esqueceu-senha.js* -
 > > > >- *esqueceu-senha.html* -
-> > >- **esqueceu-senha-alterar/** -
-> > > >- *esqueceu-senha-alterar.js* -
-> > > >- *esqueceu-senha-alterar.html* -
+> > >- **alterar-senha/** -
+> > > >- *alterar-senha.js* -
+> > > >- *alterar-senha.html* -
+> >- **services/**  - Serviços da aplicação;
+> > >- **authService.js** - Serviços relacionados a autenticação do usuário;
+> > >- **userService.js** - Serviços relacionados ao usuário. ex.: get e update de dados cadastrais;
+> >- **shared/**  - Componentes reutilizáveis ou particionados;
+> >- **components/**  - Cada componente é tratado como um mini aplicativo Angular;
 > >- **controllers/** - Controllers da aplicação;
-> >- **directives/** - Diretivas da aplicação;
->- **assets/** -
+> >- **directives/**  - Diretivas da aplicação;
+>- **assets/** - Arquivos da aplicação
 > >- **img/** - Imagens e ícones;
 > >- **libs/** - Bibliotecas de terceiros, como jQuery, Moment, Underscore, etc;
+> >- **css/** - Arquivos de CSS;
+> > >- **base/** - Código padrão para o projeto;
+> > > >- *base.scss* - Css de base para estilização;
+> > > >- *reset.scss* - Reset de estilos aplicados pelos navegadores;
+> > > >- *typography.scss* - Relacionado a tipografia da aplicação;
+> > > >- *animations.scss* - Keyframes de animações;
+> > >- **layout/** - Contêm tudo que é necessário para criar o layout do site ou aplicação;
+> > > >- *header.scss* -
+> > >- **utilities/** - Guarda todas as ferramentas e auxiliares de SASS usados por todo o projeto.
+> > > >- *variables.scss* -
+> > > >- *mixins.scss* -
+> > >- **components/** - Enquanto a pasta layout/é macro, a pasta components/ é mais focada em módulos;
+> > > >- *carousel.scss* -
+> > >- **main.scss** - Arquivo main CSS;
 > >- **js/** - Arquivos Javascript que não são para o Angular;
-> > > >- *utils.js* - Funções e scripts que podem ser reutilizados na aplicação;
-> >- **styles/** - Styles da aplicação;
-> > >- **base/** -
-> > >- **abstracts/** -
-> > >- **layout/** -
-> > >- **components/** -
-> > >- **style.scss** - Arquivo main CSS;
+> > >- *utils.js* - Funções e scripts que podem ser reutilizados na aplicação;
 >- *app.module.js* -
 >- *app.routes.js* -
->- *index.html* - Arquivo padrão de start da aplicação;
+- *index.html* - Arquivo padrão de start da aplicação;
 
 <!-- REPOSITORY -->
 ## Commits de Tarefas
