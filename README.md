@@ -13,7 +13,7 @@
 ## Tabela de Conteúdo
 
 - [Sobre o Projeto](#sobre-o-projeto)
-- [Estrutura de Desenvolvimento](#desenvolvimento)
+- [Estrutura de Desenvolvimento](#estrutura-de-desenvolvimento)
 - [Começando](#come%C3%A7ando)
   - [Estrutura de Arquivos](#estrutura-de-arquivos)
   - [Instalação](#instala%C3%A7%C3%A3o)
@@ -33,9 +33,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Abaixo segue o que foi utilizado na criação do projeto:
 
-- [typeface-muli](https://www.npmjs.com/package/typeface-muli)- Livraria de CSS e enginer de arquivos de fontes;
-- [velocity](https://www.npmjs.com/package/velocity-react)- Agregador de velocidade de DOM;
-- [web-vitals]()- Livraria de definições e medidores de Web Vitals;
+- [Angular CLI](https://www.npmjs.com/package/@angular/cli)- O Angular CLI é uma ferramenta de interface de linha de comando que você usa para inicializar, desenvolver, criar scaffold e manter aplicativos Angular diretamente de um shell de comando.
+
 
 <!-- GETTING STARTED -->
 ## Começando
@@ -53,37 +52,29 @@ portalFarani
 ├── src/
 │   ├── app/
 │   │   ├── auth/
-│   │   │   ├── index.html
-│   │   │   └── index.js
+│   │   │   ├── login/
+│   │   │   │   ├── login.html
+│   │   │   │   └── login.js
+│   │   │   ├── esqueceu-senha/
+│   │   │   │   ├── esqueceu-senha.html
+│   │   │   │   └── esqueceu-senha.js
+│   │   │   ├── alterar-senha/
+│   │   │   │   ├── alterar-senha.html
+│   │   │   │   └── alterar-senha.js
+│   │   │   └── cadastre-se/
+│   │   │       ├── cadastre-se.html
+│   │   │       └── cadastre-se.js
 │   │   ├── shared/
-│   │   │   ├── sidebar/
-│   │   │   │   ├── sidebar.html
-│   │   │   │   └── sidebar.js
-│   │   │   ├── header/
-│   │   │   │   ├── header.html
-│   │   │   │   └── header.js
-│   │   │   ├── formItem/
-│   │   │   │   ├── formItem.html
-│   │   │   │   └── formItem.js
-│   │   │   ├── sidebar/
-│   │   │   │   ├── sidebar.html
-│   │   │   │   └── sidebar.js
 │   │   ├── services/
 │   │   │   ├── authService.js
 │   │   │   └── userService.js
 │   │   ├── components/
-│   │   │   ├── home/
-│   │   │   │   ├── home.html
-│   │   │   │   └── home.js
 │   │   ├── controllers/
-│   │   │   └── mainControler.js
 │   │   └── directives/
-│   │       └── mainDirective.js
-│   ├── app.module.js
-│   └── app.routes.js
 ├── assets/
 │   ├── img/
 │   ├── js/
+│   │   └── utils.js
 │   ├── libs/
 │   ├── styles/
 │   │   ├── base/
@@ -101,6 +92,8 @@ portalFarani
 │   │       ├── variables.scss
 │   │       └── mixins.scss
 │   └── main.scss
+├── app.module.js
+├── app.routes.js
 ├── .eslintignore
 ├── .eslintrc
 ├── .gitignore
@@ -142,21 +135,20 @@ ng serve
 
 Nesta seção haverão instruções para editar o template e manter a estrutura principal de módulos explicando para que os diretórios são utilizados e também os arquivos de configuração.
 
->- **dist/** - Diretório publico de arquivos estáticos da aplicação;
->- **app/** -
-> >- **shared/** - Componentes reutilizáveis ou particionados
-> > >- **header/** - Componente de header da aplicação
+- **dist/** - Diretório publico de arquivos estáticos da aplicação;
+>- **app/** - Diretório principal de configuração e organização da aplicação;
+> >- **shared/** - Componentes reutilizáveis ou particionados;
+> > >- **header/**
 > > > >- *header.js* -
 > > > >- *header.html* -
-> >- **services/** - Serviços da aplicação
-> > >- **authService.js**   - Serviços relacionados a autenticação do usuário.
-> > >- **userService.js**   - Serviços relacionados ao usuário. ex.: get e update de dados cadastrais
-> > >- **cursosService.js** - Serviços relacionados a trilha do usuário
-> >- **components/** - Componentes da aplicação
+> >- **services/** - Serviços da aplicação;
+> > >- **authService.js**   - Serviços relacionados a autenticação do usuário;
+> > >- **userService.js**   - Serviços relacionados ao usuário. ex.: get e update de dados cadastrais;
+> >- **components/** - Componentes da aplicação;
 > > >- **home/** -
 > > > >- *home.js* -
 > > > >- *home.html* -
-> >- **auth/** - Autenticação da aplicação
+> >- **auth/** - Autenticação da aplicação;
 > > >- **login/** -
 > > > >- *login.js* -
 > > > >- *login.html* -
@@ -166,22 +158,22 @@ Nesta seção haverão instruções para editar o template e manter a estrutura 
 > > >- **esqueceu-senha-alterar/** -
 > > > >- *esqueceu-senha-alterar.js* -
 > > > >- *esqueceu-senha-alterar.html* -
-> >- **controllers/** - Controllers da aplicaçãoo
-> >- **directives/** - Diretivas da aplicaçãoo
+> >- **controllers/** - Controllers da aplicação;
+> >- **directives/** - Diretivas da aplicação;
 >- **assets/** -
-> >- **img/** - Imagens e ícones da aplicação
-> >- **libs/** - Bibliotecas de terceiros, como jQuery, Moment, Underscore, etc.
-> >- **js/** - Arquivos Javascript que não são para o Angular
-> > > >- *utils.js* - Funções e scripts que podem ser reutilizados na aplicação
-> >- **css/** - Arquivos de estilo (Padrão SMACSS)
+> >- **img/** - Imagens e ícones;
+> >- **libs/** - Bibliotecas de terceiros, como jQuery, Moment, Underscore, etc;
+> >- **js/** - Arquivos Javascript que não são para o Angular;
+> > > >- *utils.js* - Funções e scripts que podem ser reutilizados na aplicação;
+> >- **styles/** - Styles da aplicação;
 > > >- **base/** -
 > > >- **abstracts/** -
 > > >- **layout/** -
 > > >- **components/** -
-> > >- **style.scss** -
+> > >- **style.scss** - Arquivo main CSS;
 >- *app.module.js* -
 >- *app.routes.js* -
-- *index.html* - Arquivo padrão de start da aplicação;
+>- *index.html* - Arquivo padrão de start da aplicação;
 - *.eslintignore* -
 - *.eslintrc* -
 - *.gitignore* -
