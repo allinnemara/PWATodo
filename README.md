@@ -94,14 +94,6 @@ portalFarani
 │   └── main.scss
 ├── app.module.js
 ├── app.routes.js
-├── .eslintignore
-├── .eslintrc
-├── .gitignore
-├── CREDITS
-├── jsconfig.json
-├── LICENSE
-├── package.json
-└── README.md
 ```
 
 Serão explicados os arquivos e diretórios na seção de [Workflow](#workflow).
@@ -174,14 +166,6 @@ Nesta seção haverão instruções para editar o template e manter a estrutura 
 >- *app.module.js* -
 >- *app.routes.js* -
 >- *index.html* - Arquivo padrão de start da aplicação;
-- *.eslintignore* -
-- *.eslintrc* -
-- *.gitignore* -
-- *jsconfig.json* -
-- *package.json* -
-- *CREDITS* -
-- *LICENSE* -
-- *README.md* -
 
 <!-- REPOSITORY -->
 ## Commits de Tarefas
