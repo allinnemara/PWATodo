@@ -65,33 +65,33 @@ portalFarani
 │   │   │       ├── cadastre-se.html
 │   │   │       └── cadastre-se.js
 │   │   ├── shared/
+│   │   ├── components/
+│   │   ├── controllers/
+│   │   ├── directives/
 │   │   ├── services/
 │   │   │   ├── authService.js
 │   │   │   └── userService.js
-│   │   ├── components/
-│   │   ├── controllers/
-│   │   └── directives/
-│   ├── assets/
-│   │   ├── img/
-│   │   ├── libs/
-│   │   ├── js/
-│   │   │   └── utils.js
-│   │   ├── styles/
-│   │   │   ├── base/
-│   │   │   │   ├── base.scss
-│   │   │   │   └── reset.scss
-│   │   │   ├── layout/
-│   │   │   │   ├── form.scss
-│   │   │   │   └── buttons.scss
-│   │   │   ├── components/
-│   │   │   │   ├── cardConteudo.scss
-│   │   │   │   └── cardCertificados.scss
-│   │   │   └── abstracts/
-│   │   │       ├── variables.scss
-│   │   │       └── mixins.scss
-│   │   └── main.scss
-│   ├── app.module.js
-│   └── app.routes.js
+│   │   ├── app.module.js
+│   │   └── app.routes.js
+│   └── assets/
+│       ├── img/
+│       ├── libs/
+│       ├── js/
+│       │   └── utils.js
+│       ├── styles/
+│       │   ├── base/
+│       │   │   ├── base.scss
+│       │   │   └── reset.scss
+│       │   ├── layout/
+│       │   │   ├── form.scss
+│       │   │   └── buttons.scss
+│       │   ├── components/
+│       │   │   ├── cardConteudo.scss
+│       │   │   └── cardCertificados.scss
+│       │   └── abstracts/
+│       │       ├── variables.scss
+│       │       └── mixins.scss
+│       └── main.scss
 └── index.html
 
 ```
