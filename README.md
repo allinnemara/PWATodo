@@ -142,7 +142,7 @@ ng serve
 
 Nesta seção haverão instruções para editar o template e manter a estrutura principal de módulos explicando para que os diretórios são utilizados e também os arquivos de configuração.
 
-- **dist/** - Diretório publico de arquivos estáticos da aplicação;
+>- **dist/** - Diretório publico de arquivos estáticos da aplicação;
 >- **app/** -
 > >- **shared/** - Componentes reutilizáveis ou particionados
 > > >- **header/** - Componente de header da aplicação
